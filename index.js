@@ -13,7 +13,7 @@
 			var repeatCount = +repeatNode;
 			if (!repeatCount) continue;
 			node.removeAttribute("data-repeat-node");
-			while (repeatCount--) {
+			while (--repeatCount) {
 				var clonedNode = node.cloneNode(true);
 				insertAfter(clonedNode, node);
 			}
